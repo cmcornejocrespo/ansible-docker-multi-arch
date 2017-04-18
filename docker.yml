@@ -1,0 +1,9 @@
+---
+- name: Installs docker and docker compose
+  hosts: aws
+  become: yes
+  vars_files:
+    - docker-vars.yml
+
+  roles:
+    - role: docker
