@@ -1,0 +1,7 @@
+---
+- name: Installs Maven
+  hosts: aws
+  become: yes
+
+  roles:
+    - role: maven
