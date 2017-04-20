@@ -1,0 +1,7 @@
+---
+- name: Installs java jdk
+  hosts: aws
+  become: yes
+
+  roles:
+    - role: java-jdk
